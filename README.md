@@ -11,6 +11,8 @@
 
 ## Structure
 *You can see updates by moving between commits*
+##### `Rocket V1.0.20` 
+1. Use Fetch API
 ##### `Rocket V1.0.10` 
 1. Use jQuery.ajax().
 ##### `Rocket V1.0.00` 
@@ -23,6 +25,7 @@
 
 
 ## changelog
+- **V1.0.20** _Add Fetch API_
 - **V1.0.10** _Use jQuery $.ajax() instead of [new XMLHttpRequest()]_
 - **V1.0.00** _Create the first version of the search engine._
 

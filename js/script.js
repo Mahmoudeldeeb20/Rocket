@@ -14,13 +14,22 @@ searchForm.addEventListener('submit', function (e) {
         searchHeader.classList.add('userSearched')
         searchedContainer.classList.add('userSearched')
         if (searchForImages.checked == true) {
-                $.ajax({
-                        url: `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}&per_page=30`,
+                // $.ajax({
+                //         url: `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}&per_page=30`,
+                //         headers: {
+                //                 Authorization: 'Client-ID e9aaca0cb4dd0f9b78538cb6e23cb382ddf4212aba203384ada72a698143308c'
+                //         }
+                // }).done(searchImages).fail(requestError)
+                fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchedForText}&per_page=30`, {
                         headers: {
                                 Authorization: 'Client-ID e9aaca0cb4dd0f9b78538cb6e23cb382ddf4212aba203384ada72a698143308c'
                         }
-                }).done(searchImages).fail(requestError)
+                })
+                        .then(response => response.json())
+                        .then(searchImages)
+                        .catch(requestError)
         }
+
         if (searchForArticles.checked == true) {
                 $.ajax({
                         url: `https://api.unsplash.com/search/photos?page=1&query=${searchedForText}&per_page=1`,
