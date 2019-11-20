@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="img/siteIco.ico">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Rocket, search like a Rocket!</title>
+
+</head>
+
+<body>
+        <header id="searchHeader" class="rocketHeader ">
+                <a href="/"><img class="rocketImg headingImg" src="img/rocket.png" alt="Rocket!"></a>
+                <div class="rocketContainer searchContainer">
+                        <h1 class="interestHeading">What are you interested in today?</h1>
+                        <form id="searchRocket" class="rocketForm searchForm" action="#">
+                                <input id="keywordSearch" class="rocketInputText searchInput" type="text"
+                                        name="search-input" placeholder="e.g. Earth!" required autocomplete="off">
+                                <button id="keywordSubmit" class="rocketInputSubmit searchSubmit" type="submit">
+                                        Rocket <i class="fas fa-rocket"></i>
+                                </button>
+                                <div class="radioContainer">
+                                        <span class="radioChecker">
+                                                <input type="radio" name="searchType" id="searchForImages"
+                                                        class="rocketRadio searchRadio" required>
+                                                <label class="radioLabel" for="searchForImages">Images search</label>
+                                        </span>
+                                        <span class="radioChecker">
+                                                <input type="radio" name="searchType" id="searchForArticles"
+                                                        class="rocketRadio searchRadio" required>
+                                                <label class="radioLabel" for="searchForArticles">Articles
+                                                        search</label>
+                                        </span>
+                                </div>
+                        </form>
+                </div>
+        </header>
+
+        <div id='searchedContainer' class="rocketContainer searchedItemsContainer">
+                <div id="searchResult" class="rocketContainer">
+
+                </div>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+
+</html>

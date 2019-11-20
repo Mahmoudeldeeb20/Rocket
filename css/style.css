@@ -1,0 +1,407 @@
+/* Site Framework */
+body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+a,
+button {
+        text-decoration: none !important;
+}
+
+.rocketContainer {
+        padding: 2%;
+        margin: 2%;
+        border-radius: 2px;
+        box-sizing: border-box;
+}
+
+
+.rocketForm {
+        padding: 1%;
+        box-sizing: border-box;
+}
+
+.rocketInputText {
+        border: none;
+        padding: 8px;
+        padding-left: 14px;
+        margin: 2px 8px;
+        box-sizing: border-box;
+}
+
+.rocketInputText:focus {
+        outline: none;
+}
+
+.rocketInputSubmit {
+        border: none;
+        padding: 1%;
+        background: rgb(236, 236, 236);
+        box-sizing: border-box;
+        cursor: pointer;
+}
+
+.rocketInputSubmit:focus {
+        outline: none;
+}
+
+/* Site Framework */
+
+.rocketHeader {
+        transition: all ease-out 0.3s;
+        user-select: none;
+}
+
+.rocketHeader .interestHeading {
+        margin: 0;
+        margin-top: 2%;
+        font-family: "helvetica";
+        font-size: 32pt;
+        font-weight: 100;
+        text-transform: capitalize;
+        transition: all ease-out 0.3s;
+}
+
+.rocketHeader .headingImg {
+        box-shadow: 0px 0px black;
+        position: absolute;
+        top: 10%;
+        left: 29%;
+        z-index: 0;
+        filter: blur(1px);
+        transition: all ease-out 0.3s;
+        pointer-events: none;
+}
+
+.rocketHeader .searchContainer {
+        position: absolute;
+        text-align: center;
+        height: 28%;
+        top: 29%;
+        width: 96%;
+        transition: all ease-out 0.3s;
+}
+
+.rocketHeader .searchContainer .searchForm {
+        transition: all ease-out 0.3s;
+        font-family: 'helvetica';
+}
+
+.rocketHeader .searchContainer .searchInput {
+        padding: 1%;
+        width: 45%;
+        padding-left: 2%;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0);
+        border: 1px solid rgba(207, 207, 207, 0.92);
+        box-shadow: inset 0px 0px 6px -2px rgba(0, 0, 0, 0.3);
+        margin: 1% auto;
+        border-width: 0px 0px 0px 2px;
+        transition: all ease-out 0.3s;
+}
+
+.rocketHeader .searchContainer .searchSubmit {
+        width: 12%;
+        height: 45px;
+        margin-top: 1%;
+        border-radius: 50px;
+        background: rgba(236, 236, 236, 0);
+        transition: all ease-out 0.3s;
+        box-shadow: 0px 0px 7px -3px rgba(0, 0, 0, 0.33);
+}
+
+.rocketHeader .searchContainer .searchSubmit i {
+        position: relative;
+        top: 1px;
+        color: rgb(242, 108, 79);
+}
+
+.rocketHeader .searchContainer .searchSubmit:hover {
+        background: rgb(255, 255, 255);
+}
+
+.rocketHeader .searchContainer .radioContainer {
+        font-weight: 700;
+        width: 55%;
+        margin: 0 auto;
+        text-align: left;
+        background: rgba(0, 0, 0, 0.05);
+        padding: 4px;
+        border-radius: 20px;
+}
+
+.rocketHeader .searchContainer .radioChecker {
+        display: inline-block;
+}
+
+.rocketHeader .searchContainer .radioLabel {
+        display: inline-block;
+        border-radius: 30px;
+        width: 80px;
+        padding: 6px;
+        cursor: pointer;
+        transition: all ease-out 0.3s;
+        margin: 0 2px;
+        background: rgba(255, 255, 255, 0);
+        box-shadow: inset 0px 0px 6px -2px rgba(0, 0, 0, 0.3);
+        font-size: 8pt;
+        text-align: center;
+}
+
+.rocketHeader .searchContainer .searchRadio {
+        display: none;
+}
+
+
+.rocketHeader .searchContainer .searchRadio:checked~.radioLabel {
+        background: rgb(33, 33, 33);
+        color: #FFC107;
+}
+
+
+/* Style After User  Search */
+.rocketHeader.userSearched {
+        padding: 1%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        padding-left: 2%;
+}
+
+.rocketHeader.userSearched .headingImg {
+        width: 36px;
+        height: 36px;
+        filter: none;
+        position: unset;
+        display: inline-block;
+        z-index: 1;
+}
+
+.rocketHeader.userSearched .searchContainer {
+        position: unset;
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        height: unset;
+}
+
+.rocketHeader.userSearched .searchContainer .interestHeading {
+        display: none;
+}
+
+.rocketHeader.userSearched .searchContainer .searchForm {
+        padding: 0;
+}
+
+.rocketHeader.userSearched .searchContainer .searchForm .searchInput {
+        height: 36px;
+        margin: 0 2%;
+        width: 44%;
+        margin-right: 0;
+}
+
+.rocketHeader.userSearched .searchContainer .searchForm .searchSubmit {
+        width: 106px;
+        height: 36px;
+        margin: 0;
+        box-shadow: 0 0 4px -3px rgba(0, 0, 0, 0.7);
+        padding: 0;
+        background: #ffeb3b;
+}
+
+.rocketHeader.userSearched .searchContainer .searchForm .radioContainer {
+        width: 40%;
+        background: transparent;
+        display: inline-block;
+        text-align: center;
+}
+
+#searchedContainer {
+        display: none;
+        font-family: "helvetica";
+}
+
+#searchedContainer.userSearched {
+        display: block;
+}
+
+/* Style After User  Search */
+/* #### #### #### #### #### #### #### #### #### ####  */
+/* Search Items Style */
+
+.searchedItemsContainer #searchResult {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background: rgba(215, 215, 215, 0.25);
+        box-shadow: inset 0 0 8px -7px black;
+        border-radius: 10px;
+}
+
+.searchedItemsContainer #searchResult .searchedItem {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 399px;
+        box-shadow: 1px 1px 5px -3px black;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 30%;
+        margin: 2% 0;
+        position: relative;
+        border-radius: 5px;
+        transition: all ease-out 0.3s;
+}
+
+.searchedItemsContainer #searchResult .searchedItem:hover {
+        transform: scale(1.03);
+}
+
+.searchedItemsContainer #searchResult .imageSearchedContent {
+        text-transform: capitalize;
+        font-size: 10pt;
+        font-weight: 600;
+        text-align: justify;
+        text-align-last: center;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        top: 0;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        transition: all ease-out 0.3s;
+        border-radius: 5px 5px 0 0;
+        font-weight: 100;
+}
+
+.searchedItemsContainer #searchResult .imageSearch {
+        width: 100%;
+        border-radius: 5px;
+        max-height: 350px;
+        height: -webkit-fill-available;
+}
+
+.searchedItemsContainer #searchResult .itemCopyRight {
+        font-size: 8pt;
+        display: block;
+        transition: all ease-out 0.3s;
+        padding: 2px 4px;
+}
+
+.searchedItemsContainer #searchResult .itemCopyRight a {
+        color: #3F51B5;
+        font-weight: 600;
+        float: right;
+        transition: all ease-out 0.3s;
+}
+
+.searchedItemsContainer #searchResult .itemCopyRight a:hover {
+        color: #F44336;
+}
+
+.searchedItemsContainer #searchResult .downloadImage {
+        background: rgba(0, 0, 0, 0.09);
+        padding: 5px;
+        text-align: left;
+        font-size: 8pt;
+        margin: 1% 0;
+        display: block;
+        border-radius: 0 0 5px 5px;
+}
+
+.searchedItemsContainer #searchResult .downloadImage .downloadHeading {
+        display: inline-block;
+        font-weight: 600;
+}
+
+.searchedItemsContainer #searchResult .downloadImage a {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.08);
+        padding: 2px 5px;
+        border-radius: 10px;
+        font-size: 8pt;
+        color: #E91E63;
+        font-weight: 600;
+        font-style: italic;
+}
+
+
+/* Search Article */
+.searchedItemsContainer #searchResult.article {
+        justify-content: space-around;
+        background: rgba(0, 0, 0, .9);
+}
+
+.searchedItemsContainer #searchResult .searchedItem.imageArticle {
+        height: unset;
+        flex-basis: 35%;
+        box-shadow: none;
+}
+
+.searchedItemsContainer #searchResult .searchedItem.imageArticle:hover {
+        transform: scale(1);
+}
+
+
+.searchedItemsContainer #searchResult .searchedItem.imageArticle .imageSearch {
+        border-radius: 0 0 5px 5px;
+        max-height: unset;
+        height: unset;
+}
+
+.searchedItemsContainer #searchResult .searchedItem.imageArticle .itemCopyRight {
+        color: rgb(244, 240, 211);
+}
+
+
+.searchedItemsContainer #searchResult #articleContentContainer {
+        flex-basis: 60%;
+        margin: 2% 0;
+        height: max-content;
+}
+
+.searchedItemsContainer #searchResult .articleContent {
+        background: #fff;
+        padding: 2%;
+        box-sizing: border-box;
+        height: max-content;
+        border-radius: 5px;
+        margin-bottom: 2%;
+}
+
+.searchedItemsContainer #searchResult .articleContent a {
+        color: #F44336;
+        transition: all ease-out 0.3s;
+}
+
+.searchedItemsContainer #searchResult .articleContent a:hover {
+        color: #3F51B5;
+}
+
+.searchedItemsContainer #searchResult .articleContent .contentBrief {
+        margin: 2px 0;
+        font-size: 10pt;
+        color: #727272;
+        margin-bottom: 1%;
+}
+
+.searchedItemsContainer #searchResult .articleContent #keyWords {
+        font-size: 8pt;
+}
+
+.searchedItemsContainer #searchResult .articleContent #keyWords .articleKeywords {
+        background: #FFEB3B;
+        padding: 2px 6px;
+        border-radius: 50px;
+        color: rgb(36, 36, 36);
+        margin-right: 1%;
+}
+
+/* Search Article */
+/* Search Items Style */
